@@ -25,7 +25,7 @@ setup_key_generator_and_server = { path = "../setup_key_generator_and_server", v
 
 
 api = { git = "https://github.com/matter-labs/era-heavy-ops-service.git", branch = "main", features=["gpu"], default-features=false}
-prover-service = { git = "https://github.com/matter-labs/era-heavy-ops-service.git", branch = "main", features=["gpu"], default-features=false}
+prover-service = { git = "https://github.com/wb-zk/era-heavy-ops-service.git", branch = "main", features=["gpu"], default-features=false}
 
 zkevm_test_harness = { git = "https://github.com/matter-labs/era-zkevm_test_harness.git", branch = "main"}
 
