@@ -75,6 +75,10 @@ fn get_prover_config_for_machine_type() -> ProverConfig {
             vlog::info!("Detected machine type with 4 GPU and 80GB RAM");
             prover_configs.four_gpu_eighty_gb_mem
         }
+        8 => {
+            vlog::info!("Detected machine type with 8 GPU and 80GB RAM, and we will use it as 4 and 80 machine");
+            prover_configs.four_gpu_eighty_gb_mem
+        }
         _ => panic!("actual_num_gpus: {} not supported yet", actual_num_gpus),
     }
 }
