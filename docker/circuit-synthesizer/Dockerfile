@@ -15,8 +15,8 @@ ENV RUSTUP_HOME=/usr/local/rustup \
     PATH=/usr/local/cargo/bin:$PATH
 
 RUN curl https://sh.rustup.rs -sSf | bash -s -- -y && \
-    rustup install nightly-2022-10-14 && \
-    rustup default nightly-2022-10-14
+    rustup install 1.66.1-x86_64-unknown-linux-gnu && \
+    rustup default 1.66.1-x86_64-unknown-linux-gnu
 
 WORKDIR /usr/src/zksync
 COPY . .
