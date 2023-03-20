@@ -1,10 +1,11 @@
 [workspace]
 members = [
+    "core/bin/prover"
     "core/bin/circuit_synthesizer"
 ]
 resolver = "2"
 
-exclude = [ "core/bin/prover", "core/bin/setup_key_generator_and_server" ]
+exclude = [  "core/bin/setup_key_generator_and_server" ]
 
 [profile.test.package.zksync_merkle_tree]
 opt-level = 3
