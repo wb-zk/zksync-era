@@ -68,6 +68,10 @@ fn get_circuit(
         prover_job_metadata.aggregation_round,
     );
     let object_store = create_object_store_from_env();
+    println!("{}","-----------------------");
+    println!("{}",PROVER_JOBS_BUCKET_PATH);
+    println!("{}",circuit_input_blob_url);
+    println!("{}","-----------------------");
     let circuit_input = object_store
         .get(PROVER_JOBS_BUCKET_PATH, circuit_input_blob_url)
         .expect("Failed fetching prover jobs from GCS");
