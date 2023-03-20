@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "core/bin/setup_key_generator_and_server"
+]
+resolver = "2"
+
+exclude = [ ]
+
+[profile.test.package.zksync_merkle_tree]
+opt-level = 3
+
